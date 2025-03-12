@@ -391,6 +391,8 @@ function load() {
 				let itemDate = item["pubDate"] ?? item["dc:date"] ?? item["a10:updated"];
 				if (itemDate?.endsWith(" Z")) { // the Date parser is pretty dumb
 					itemDate = itemDate.slice(0, -2) + "GMT";
+				} else if (itemDate?.endsWith(" -0000")) {
+					itemDate = itemDate.slice(0, -6) + "UTC-9";
 				}
 				const date = (itemDate == null ? new Date() : new Date(itemDate));
 				

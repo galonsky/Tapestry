@@ -1,6 +1,6 @@
 {
-	"id": "xml.feed",
-	"display_name": "Blog Feed (RSS/Atom)",
+	"id": "tgp.xml.feed",
+	"display_name": "The Good Place",
 	"service_name": "Blog",
 	"default_color": "purple",
 	"icon": "https://usetapestry.com/icons/rss.png",
